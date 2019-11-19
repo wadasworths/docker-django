@@ -9,3 +9,9 @@ docker build -t myblog /root/docker/django-uwsgi-nginx
 ```sh
 docker run -itd --link mysql:mysql -v /home/www/testproject:/home/docker/code/webproject --name webapp-project -p 8080:80 webproject bash
 ```
+
+在mysql文件下创建data目录
+
+```sh
+mkdir mysql/data
+``
